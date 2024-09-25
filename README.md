@@ -26,7 +26,7 @@ EXPERIENCE
 
 ## Work Experience
 
-### Mitsubishi Research Institute (MRI) Tokyo, Japan 
+### Mitsubishi Research Institute (MRI) (Tokyo, Japan) 
 #### Consulting Intern (2022)
 •Conducted research on startups and impact investing in Southeast Asia under the Global Business Division
 
