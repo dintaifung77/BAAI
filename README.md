@@ -41,7 +41,8 @@ EXPERIENCE
 
 •Teaching Assistant - Professor Uri Gneezy, Rady School of Management
 
-### Graduate Research Assistant - Professors Renee Bowen and Ping-hui Liao 2021 –2022
+### Graduate Research Assistant
+#### Professors Renee Bowen and Ping-hui Liao (2021 –2022)
 
 •Drafted research summaries of recent publications for the Center for Commerce and Diplomacy
 
