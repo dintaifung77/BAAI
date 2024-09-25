@@ -9,4 +9,4 @@ name = input('Name: ')
 # 2. Process
 
 # 3. Output
-print(f'Hello {n}')
+print(f'Hello {name}')
