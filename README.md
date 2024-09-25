@@ -26,6 +26,12 @@ EXPERIENCE
 
 ## Work Experience
 
+### Mitsubishi Research Institute (MRI) Tokyo, Japan 
+#### Consulting Intern (2022)
+•Conducted research on startups and impact investing in Southeast Asia under the Global Business Division
+
+•Wrote and presented on policies Japan’s Digital Agency ( デジタル庁) should implement regarding Web 3.0
+
 ### Teaching Assistant (2021-2023)
 •International Economics - Professor Renee Bowen, GPS
 
@@ -42,11 +48,7 @@ EXPERIENCE
 •Designed book talk posters for UC San Diego's Taiwan Studies Center
 
 
-### Mitsubishi Research Institute (MRI) Tokyo, Japan 
-#### Consulting Intern (2022)
-•Conducted research on startups and impact investing in Southeast Asia under the Global Business Division
 
-•Wrote and presented on policies Japan’s Digital Agency ( デジタル庁) should implement regarding Web 3.0
 
 
 ## LANGUAGES
