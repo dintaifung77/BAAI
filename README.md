@@ -1,23 +1,24 @@
 # Zachary Belgum's Resume
 
 ## Education
-# UC San Diego, School of Global Policy and Strategy (GPS) San Diego, CA
-Master of International Affairs, International Management and China and Japan,  June 2023
+### UC San Diego, School of Global Policy and Strategy (GPS) San Diego, CA
+•Master of International Affairs, International Management and China and Japan
+
 •Honors: 2022-2023 Dean’s Fellow, Full Ride Scholarship
 
 
-## UC Santa Barbara Santa Barbara, CA
+### UC Santa Barbara Santa Barbara, CA
 Bachelor of Arts, Economics and Chinese June 2021
-•Honors: Academic Excellence Award, Phi Beta Kappa, 2020-2021 UCSB William R. Reardon Commencement Award, 
+
+Honors: Academic Excellence Award, Phi Beta Kappa, 2020-2021 UCSB William R. Reardon Commencement Award, 
 Kenneth Hsien-yung Pai Award for Top Achievement in Chinese Studies 
 
 •Study Abroad: Chinese Language Program, National Taiwan Normal University, Summer 2019
 
 o 2019 Huayu Enrichment Scholarship Recipient, Taiwan's Ministry of Education 
 EXPERIENCE
-UC San Diego La Jolla, CA
-Strategy Capstone Project September 2021 –June 2023
-•Formulated business strategy for a California airport concession joint venture
+
+
 Teaching Assistant 2021-2023
 •International Economics - Professor Renee Bowen, GPS
 •Finance/Accounting for Policy Makers - Professor Krislert Samphantharak, GPS
