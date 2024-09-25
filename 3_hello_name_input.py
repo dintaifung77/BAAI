@@ -4,7 +4,7 @@
 #
 
 # 1. Input
-n = input('Name: ')
+name = input('Name: ')
 
 # 2. Process
 
