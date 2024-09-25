@@ -1,13 +1,13 @@
 # Zachary Belgum's Resume
 
 ## Education
-### UC San Diego, School of Global Policy and Strategy (GPS) San Diego, CA
+### UC San Diego, School of Global Policy and Strategy (GPS) (San Diego, CA)
 Master of International Affairs, International Management and China and Japan
 
 Honors: 2022-2023 Dean’s Fellow, Full Ride Scholarship
 
 
-### UC Santa Barbara Santa Barbara, CA
+### UC Santa Barbara (Santa Barbara, CA)
 Bachelor of Arts, Economics and Chinese June 2021
 
 Honors: Academic Excellence Award, Phi Beta Kappa
