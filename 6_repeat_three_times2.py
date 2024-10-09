@@ -3,8 +3,8 @@
 # Repeat the task three times
 #
 
-max_lap = 3
-curr_lap = 1
+max_lap = 3    # maximum number of repetitions
+curr_lap = 1   
 
 while (curr_lap <= max_lap):
     # 1. Input
