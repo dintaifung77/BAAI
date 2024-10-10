@@ -12,7 +12,7 @@ while (count <= s):
     s1 = input(f'Enter the name of subject {count}: ')
     n1 = int(input(f'Enter the grade for {s1}: '))
     sum = sum + n1
-    count += 1 # count= count + 1
+    count += 1     # count= count + 1
 
 # 2. Process
 avg = sum / s
