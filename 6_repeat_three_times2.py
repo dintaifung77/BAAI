@@ -22,4 +22,4 @@ while (curr_lap <= max_lap):
     # 3. Output
     print(f'Bigger : {bigger}')
 
-    curr_lap += 1
+    curr_lap += 1 # curr_lap= curr_lap + 1
