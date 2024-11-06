@@ -5,8 +5,8 @@
 #
 
 while True:
-    w = int(input('Enter your weight in kilograms: '))
-    h = int(input('Enter your height in meters: '))
+    w = float(input('Enter your weight in kilograms: '))
+    h = float(input('Enter your height in meters: '))
 
     bmi = w / (h**2)
     print(f'Your BMI is: {bmi}')
