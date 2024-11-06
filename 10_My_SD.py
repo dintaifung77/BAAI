@@ -20,5 +20,6 @@ def my_sd(input):
         output = math.sqrt(sum)
         return output
 
-answer =my_sd([1,2,3])
+answer =my_sd([10,20,30])
+answer = round(answer, 2)
 print(f'Answer: {answer}')
