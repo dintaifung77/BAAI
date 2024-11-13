@@ -1,0 +1,13 @@
+---
+title: "Testing quarto"
+author: 'Zach'
+date: 2024-11-13
+format: revealjs
+echo: true
+---
+
+Testing Quarto
+
+```{python}
+import pandas as pd
+```
