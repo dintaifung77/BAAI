@@ -1,0 +1,21 @@
+---
+title: "EDA"
+author: 'Zach'
+format: revealjs
+---
+
+## Load data
+
+
+```{python}
+import pandas as pd
+dataset = pd.read_csv('smoker.csv')
+```
+
+## Inspect Structure
+
+
+```{python}
+dataset.shape
+dataset.info()
+```
