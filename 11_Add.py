@@ -6,12 +6,12 @@
 
 # define function
 def add(x1, x2):
-        y = x1 + x2
-        return
+        sum = x1 + x2
+        return sum
 
 # 2. Process
 # Call function
-answer = add(10,20)
+y = add(10,20)
 
 # 3. Output
-print(f'Answer: {answer}')
+print(f'Answer: {y}')
