@@ -1,0 +1,61 @@
+---
+title: 'Exploratory Data Analysis'
+author: 'Zach'
+format: html
+---
+
+## Load package
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+
+## Load dataset from smoker.csv file
+
+```{python}
+df = pd.read_csv('smoker.csv')
+```
+
+## Check dimensions of dataset
+
+```{python}
+df.shape
+```
+
+## Check details of dataset (col, row, types, etc.)
+
+```{python}
+df.info()
+```
+
+## Check first five rows
+
+```{python}
+df.head()
+```
+
+## Check last five rows
+
+```{python}
+df.tail()
+```
+
+## Calculate sum of treatment column
+
+```{python}
+print(df['treatment'].sum())
+```
+
+## Create descriptive statistics
+
+```{python}
+df.describe()
+```
+
+## Check significant values in outcome column
+
+```{python}
+df['outcome'].value_counts()
+```
