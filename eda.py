@@ -1,7 +1,7 @@
 #
 # Zach
 # 2024/11/20
-#Exploratory Data Analysis
+# Exploratory Data Analysis
 #
 
 import pandas as pd
@@ -15,4 +15,3 @@ df.info()
 df.head()
 
 df.tail()
-
