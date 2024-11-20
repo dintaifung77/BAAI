@@ -1,9 +1,7 @@
 ---
 title: 'Exploratory Data Analysis'
 author: 'Zach'
-format: 
-    html:
-        embed-resources: true
+format: html
 ---
 
 ## Load package
