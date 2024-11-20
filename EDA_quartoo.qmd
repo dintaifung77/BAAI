@@ -1,5 +1,26 @@
 ---
-title: "Untitled"
+title: 'Exploratory Data Analysis'
+author: 'Zach'
 format: html
 ---
 
+## Load package
+
+```{python}
+import pandas as pd
+```
+
+
+## Load dataset from smoker.csv file
+
+```{python}
+df = pd.read_csv('smoker.csv')
+```
+
+df.shape
+
+df.info()
+
+df.head()
+
+df.tail()
