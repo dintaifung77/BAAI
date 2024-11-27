@@ -141,7 +141,6 @@ df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound
 
 ## Data Transformation
 
-
 ## Before encoding
 
 ## Encoding: M->0, F->1
