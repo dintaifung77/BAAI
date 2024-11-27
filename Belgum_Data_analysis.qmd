@@ -36,6 +36,13 @@ df = pd.read_csv('customer_data.csv')
 
 ## Data Inspection
 
+- Structure
+    - Dimension of dataset
+    - Column data type
+- Value
+    - Missing value
+    - Outliers
+
 ### Dimensions of dataset
 
 ```{python}
@@ -71,6 +78,7 @@ df.describe()
 ```{python}
 df.describe().round(2)
 ```
+
 ## Dataset
 
 ```{python}
@@ -79,6 +87,13 @@ df
 ```
 
 ## Visualization
+
+```{python}
+import matplotlib.pylab as plt
+df['Age'].hist()
+plt.show()
+```
+
 ## Correlation among columns
 
 ```{python}
@@ -93,22 +108,21 @@ plt.show()
 ```{python}
 df = df.drop_duplicates(subset='CustomerID')
 ```
+
 ## Dealing with Missing Data
 
-### Imputing
+- Imputing
 
 ```{python}
 df.loc[df['Age'].isna(), 'Age'] = df['Age'].median()
 df.loc[df['Income'].isna(), 'Income'] = df['Income'].mean()
 ```
 
-### Removing
-
+- Removing
 
 ```{python}
 df = df.dropna(subset=['Gender'])
 ```
-
 
 ## Outlier Detection and Treatment
 
@@ -120,9 +134,10 @@ lower_bound = Q1 - 1.5 * IQR
 upper_bound = Q3 + 1.5 * IQR
 ```
 
-
+```{python}
 df.loc[df['Income'] > upper_bound, 'Income'] = upper_bound
 df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound
+```
 
 ## Data Transformation
 
@@ -130,5 +145,9 @@ df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound
 ## Before encoding
 
 ## Encoding: M->0, F->1
+
+```{python}
+df.loc[:,'Gender_encoded'] = df['Gender'].map({'M': 0, 'F': 1})
+```
 
 ## After encoding

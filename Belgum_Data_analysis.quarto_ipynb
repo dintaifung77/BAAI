@@ -36,7 +36,7 @@
         "\n",
         "Load dataset from CSV file into df using pandas\n"
       ],
-      "id": "8f4e81b5"
+      "id": "53daee4f"
     },
     {
       "cell_type": "code",
@@ -45,7 +45,7 @@
         "import pandas as pd\n",
         "df = pd.read_csv('customer_data.csv')"
       ],
-      "id": "78364c34",
+      "id": "6aa068ef",
       "execution_count": null,
       "outputs": []
     },
@@ -57,7 +57,7 @@
         "\n",
         "### Dimensions of dataset\n"
       ],
-      "id": "cd7e0230"
+      "id": "7343a72d"
     },
     {
       "cell_type": "code",
@@ -65,7 +65,7 @@
       "source": [
         "df.shape"
       ],
-      "id": "548b6733",
+      "id": "7ba09bb1",
       "execution_count": null,
       "outputs": []
     },
@@ -75,7 +75,7 @@
       "source": [
         "### Column Data type\n"
       ],
-      "id": "563ace0f"
+      "id": "c2828aa3"
     },
     {
       "cell_type": "code",
@@ -83,7 +83,7 @@
       "source": [
         "df.info()"
       ],
-      "id": "b9198b47",
+      "id": "7d6af501",
       "execution_count": null,
       "outputs": []
     },
@@ -93,7 +93,7 @@
       "source": [
         "## Check first few rows\n"
       ],
-      "id": "22575078"
+      "id": "20a93398"
     },
     {
       "cell_type": "code",
@@ -101,7 +101,7 @@
       "source": [
         "df.head()"
       ],
-      "id": "895dd163",
+      "id": "125b3634",
       "execution_count": null,
       "outputs": []
     },
@@ -111,7 +111,7 @@
       "source": [
         "## Check last few rows\n"
       ],
-      "id": "3dd4b961"
+      "id": "e48a0dac"
     },
     {
       "cell_type": "code",
@@ -119,7 +119,7 @@
       "source": [
         "df.tail()"
       ],
-      "id": "0603f78d",
+      "id": "d2310d64",
       "execution_count": null,
       "outputs": []
     },
@@ -129,7 +129,7 @@
       "source": [
         "## Basic statistics\n"
       ],
-      "id": "d10fe756"
+      "id": "41e79296"
     },
     {
       "cell_type": "code",
@@ -137,7 +137,7 @@
       "source": [
         "df.describe()"
       ],
-      "id": "8eb572ce",
+      "id": "79c5c9df",
       "execution_count": null,
       "outputs": []
     },
@@ -147,7 +147,7 @@
       "source": [
         "## Round to 2 decimal points\n"
       ],
-      "id": "b425d82a"
+      "id": "7a384a9d"
     },
     {
       "cell_type": "code",
@@ -155,7 +155,7 @@
       "source": [
         "df.describe().round(2)"
       ],
-      "id": "bc30b5cc",
+      "id": "4ddb8af0",
       "execution_count": null,
       "outputs": []
     },
@@ -165,7 +165,7 @@
       "source": [
         "## Dataset\n"
       ],
-      "id": "365d38d3"
+      "id": "ecfe6375"
     },
     {
       "cell_type": "code",
@@ -174,7 +174,7 @@
         "#| echo: false\n",
         "df"
       ],
-      "id": "ff809675",
+      "id": "d9588b83",
       "execution_count": null,
       "outputs": []
     },
@@ -185,7 +185,7 @@
         "## Visualization\n",
         "## Correlation among columns\n"
       ],
-      "id": "6985bd30"
+      "id": "de687897"
     },
     {
       "cell_type": "code",
@@ -196,7 +196,7 @@
         "# import seaborn as sns\n",
         "# sns.pairplot(df)"
       ],
-      "id": "9d03fa89",
+      "id": "4368fe54",
       "execution_count": null,
       "outputs": []
     },
@@ -206,7 +206,7 @@
       "source": [
         "## Data Cleaning\n"
       ],
-      "id": "4cc89cc9"
+      "id": "4868143a"
     },
     {
       "cell_type": "code",
@@ -214,7 +214,7 @@
       "source": [
         "df = df.drop_duplicates(subset='CustomerID')"
       ],
-      "id": "f4ac6235",
+      "id": "4d1b8c17",
       "execution_count": null,
       "outputs": []
     },
@@ -226,7 +226,7 @@
         "\n",
         "### Imputing\n"
       ],
-      "id": "e802ce02"
+      "id": "f6e6b97b"
     },
     {
       "cell_type": "code",
@@ -235,7 +235,7 @@
         "df.loc[df['Age'].isna(), 'Age'] = df['Age'].median()\n",
         "df.loc[df['Income'].isna(), 'Income'] = df['Income'].mean()"
       ],
-      "id": "491086b3",
+      "id": "fd85c9e3",
       "execution_count": null,
       "outputs": []
     },
@@ -245,7 +245,7 @@
       "source": [
         "### Removing\n"
       ],
-      "id": "8b7a7c5f"
+      "id": "fc24fa46"
     },
     {
       "cell_type": "code",
@@ -253,7 +253,7 @@
       "source": [
         "df = df.dropna(subset=['Gender'])"
       ],
-      "id": "4dd6745e",
+      "id": "af4afadf",
       "execution_count": null,
       "outputs": []
     },
@@ -263,7 +263,7 @@
       "source": [
         "## Outlier Detection and Treatment\n"
       ],
-      "id": "eb68424f"
+      "id": "4598368c"
     },
     {
       "cell_type": "code",
@@ -275,7 +275,7 @@
         "lower_bound = Q1 - 1.5 * IQR\n",
         "upper_bound = Q3 + 1.5 * IQR"
       ],
-      "id": "11d2cfc7",
+      "id": "36973859",
       "execution_count": null,
       "outputs": []
     },
@@ -287,13 +287,15 @@
         "df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound\n",
         "\n",
         "## Data Transformation\n",
-        "## Normalizing: 0 ≤ x ≤ 1\n",
-        "## Standardizing: mean=0, sd=1\n",
+        "\n",
+        "\n",
         "## Before encoding\n",
+        "\n",
         "## Encoding: M->0, F->1\n",
+        "\n",
         "## After encoding"
       ],
-      "id": "5ab71723"
+      "id": "6527b2b5"
     }
   ],
   "metadata": {
