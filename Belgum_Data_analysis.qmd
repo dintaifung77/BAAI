@@ -1,0 +1,77 @@
+---
+title: 'Data Analysis'
+author: 'Zachary Belgum'
+Institute: 'Tunghai University' 
+number-sections: true
+toc: true
+format: 
+    html:
+         embed-resources: true
+---
+
+## Key Points
+
+- Data loading
+- Data inspection
+    - Structure
+    - Value
+- Data Cleaning
+    - Dealing with missing data
+    - Detect outliers
+- Data transformation
+    - Encoding
+
+Removing Duplicates
+
+## Load Dataset
+
+```{python}
+import pandas as pd
+df = pd.read_csv('customer_data.csv')
+```
+
+## Data Inspection
+## Check first few rows
+## Check last few rows
+## Basic statistics
+## Round to 2 decimal points
+## Dataset
+## Visualization
+## Correlation among columns
+
+df.plot.scatter(x = 'Age', y = 'Income')
+plt.show()
+# import seaborn as sns
+# sns.pairplot(df)
+
+
+## Data Cleaning
+
+df = df.drop_duplicates(subset='CustomerID')
+
+## Dealing with Missing Data
+
+### Imputing
+df.loc[df['Age'].isna(), 'Age'] = df['Age'].median()
+df.loc[df['Income'].isna(), 'Income'] = df['Income'].mean()
+
+### Removing
+df = df.dropna(subset=['Gender'])
+
+## Outlier Detection and Treatment
+
+Q1 = df['Income'].quantile(0.25)
+Q3 = df['Income'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+df.loc[df['Income'] > upper_bound, 'Income'] = upper_bound
+df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound
+
+## Data Transformation
+## Normalizing: 0 ≤ x ≤ 1
+## Standardizing: mean=0, sd=1
+## Before encoding
+## Encoding: M->0, F->1
+## After encoding
