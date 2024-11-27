@@ -27,7 +27,8 @@ Removing Duplicates
 
 ## Load Dataset
 
-Load dataset from CSV file into `df` using pandas
+Load dataset from CSV file into df using pandas
+
 ```{python}
 import pandas as pd
 df = pd.read_csv('customer_data.csv')
@@ -124,8 +125,10 @@ df.loc[df['Income'] > upper_bound, 'Income'] = upper_bound
 df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound
 
 ## Data Transformation
-## Normalizing: 0 ≤ x ≤ 1
-## Standardizing: mean=0, sd=1
+
+
 ## Before encoding
+
 ## Encoding: M->0, F->1
+
 ## After encoding
