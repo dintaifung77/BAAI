@@ -4,10 +4,13 @@ author: 'Zachary Belgum'
 Institute: 'Tunghai University' 
 number-sections: true
 toc: true
-format: html
+format: 
+    html:
+         embed-resources: true
 ---
 
 ## Key Points
+
 - Data loading
 - Data inspection
     - Structure
