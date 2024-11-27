@@ -25,6 +25,7 @@ Removing Duplicates
 
 ## Load Dataset
 
+Load dataset from CSV file into `df` using pandas
 ```{python}
 import pandas as pd
 df = pd.read_csv('customer_data.csv')
