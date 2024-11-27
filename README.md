@@ -12,17 +12,6 @@ Bachelor of Arts, Economics and Chinese June 2021
 
 Honors: Academic Excellence Award, Phi Beta Kappa
 
-2020-2021 UCSB William R. Reardon Commencement Award
-
-Kenneth Hsien-yung Pai Award for Top Achievement in Chinese Studies 
-
-## Study Abroad
-
-#### Chinese Language Program, National Taiwan Normal University, Summer 2019
-
-2019 Huayu Enrichment Scholarship Recipient, Taiwan's Ministry of Education 
-EXPERIENCE
-
 
 ## Work Experience
 
