@@ -9,7 +9,7 @@ format:
          embed-resources: true
 ---
 
-## Key Points
+## 1. Key Points
 
 - Data loading
 - Data inspection
@@ -20,3 +20,27 @@ format:
     - Detect outliers
 - Data transformation
     - Encoding
+
+Removing Duplicates
+```{python}
+
+```
+
+## 2. Load Dataset
+## 3. Data Inspection
+## 4. Check first few rows
+## 5. Check last few rows
+## 6. Basic statistics
+## 7. Round to 2 decimal points
+## 8. Dataset
+## 9. Visualization
+## 10. Correlation among colmuns
+## 11. Data Clearning
+## 12. Dealing with Missing Data
+## 13. Outlier Detection and Treatment
+## 14. Data Transformation
+## 15. Normalizing: 0 ≤ x ≤ 1
+## 16. Standardizing: mean=0, sd=1
+## 17. Before encoding
+## 18. Encoding: M->0, F->1
+## 19. After encoding
