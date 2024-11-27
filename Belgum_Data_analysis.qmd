@@ -4,6 +4,8 @@ author: 'Zachary Belgum'
 Institute: 'Tunghai University' 
 number-sections: true
 toc: true
+execute:
+    daemon: true
 format: 
     html:
          embed-resources: true
@@ -32,40 +34,91 @@ df = pd.read_csv('customer_data.csv')
 ```
 
 ## Data Inspection
+
+### Dimensions of dataset
+
+```{python}
+df.shape
+```
+
+### Column Data type
+
+```{python}
+df.info()
+```
+
 ## Check first few rows
+
+```{python}
+df.head()
+```
+
 ## Check last few rows
+
+```{python}
+df.tail()
+```
+
 ## Basic statistics
+
+```{python}
+df.describe()
+```
+
 ## Round to 2 decimal points
+
+```{python}
+df.describe().round(2)
+```
 ## Dataset
+
+```{python}
+#| echo: false
+df
+```
+
 ## Visualization
 ## Correlation among columns
 
+```{python}
 df.plot.scatter(x = 'Age', y = 'Income')
 plt.show()
 # import seaborn as sns
 # sns.pairplot(df)
-
+```
 
 ## Data Cleaning
 
+```{python}
 df = df.drop_duplicates(subset='CustomerID')
-
+```
 ## Dealing with Missing Data
 
 ### Imputing
+
+```{python}
 df.loc[df['Age'].isna(), 'Age'] = df['Age'].median()
 df.loc[df['Income'].isna(), 'Income'] = df['Income'].mean()
+```
 
 ### Removing
+
+
+```{python}
 df = df.dropna(subset=['Gender'])
+```
+
 
 ## Outlier Detection and Treatment
 
+```{python}
 Q1 = df['Income'].quantile(0.25)
 Q3 = df['Income'].quantile(0.75)
 IQR = Q3 - Q1
 lower_bound = Q1 - 1.5 * IQR
 upper_bound = Q3 + 1.5 * IQR
+```
+
 
 df.loc[df['Income'] > upper_bound, 'Income'] = upper_bound
 df.loc[df['Income'] < lower_bound, 'Income'] = lower_bound
