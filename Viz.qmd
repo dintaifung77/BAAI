@@ -1,0 +1,33 @@
+---
+title: 'Visualization'
+author: 'Zach'
+toc: true
+echo: true
+format: html
+---
+
+## Data loading {.smaller}
+```{python}
+import pandas as pd
+df = pd.read_csv('smoker.csv')
+df
+```
+
+## Histogram
+
+### Single variable
+```{python}
+df['smoker'].hist()
+```
+
+---
+
+### All variables
+```{python}
+df.hist();
+```
+
+## Data loading {.smaller}
+```{python}
+import pandas as pd
+```
