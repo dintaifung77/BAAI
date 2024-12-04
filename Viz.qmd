@@ -3,7 +3,9 @@ title: 'Visualization'
 author: 'Zach'
 toc: true
 echo: true
-format: html
+format: 
+    html:
+        embed-resources: true
 ---
 
 ## Data loading {.smaller}
@@ -30,4 +32,6 @@ df.hist();
 ## Data loading {.smaller}
 ```{python}
 import pandas as pd
+df = pd.read_csv('customer_data.csv')
+df
 ```
