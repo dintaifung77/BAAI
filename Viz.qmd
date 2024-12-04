@@ -67,9 +67,9 @@ df.plot(kind='scatter', x = 'Income', y = 'Age')
 df.plot.scatter(x = 'Income', y = 'Age')
 ```
 
-## All variables
+### All variables
 
-### Dataset
+#### Dataset
 
 
 ```{python}
