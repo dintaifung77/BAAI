@@ -69,18 +69,13 @@ df.plot.scatter(x = 'Income', y = 'Age')
 
 ### All variables
 
-#### Dataset
+Dataset
 
 
 ```{python}
 import seaborn as sns
 df = sns.load_dataset("iris") 
 df
-```
-
-
-```{python}
-sns.pairplot(df, hue = 'species');
 ```
 
 
