@@ -1,6 +1,6 @@
 #
 # Zach
-# Add two numbers then print the sum
+# Add two numbers then print the  sum
 #
 
 # 1. Input
