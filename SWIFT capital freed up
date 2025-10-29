@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+
+# Baseline data
+shares = [5, 10, 14, 20, 30]  # XRP adoption (%)
+global_nostro = 27_000_000_000_000  # USD
+freed_capital = [(global_nostro * (s / 100)) / 1e12 for s in shares]  # in trillions USD
+
+# Money multipliers
+multipliers = [3, 5, 7]
+expanded_money = {m: [f * m for f in freed_capital] for m in multipliers}
+
+# Plot
+plt.figure(figsize=(10, 6))
+for m, values in expanded_money.items():
+    plt.plot(shares, values, marker='o', linewidth=2, label=f"Multiplier = {m}")
+
+plt.bar([s - 1 for s in shares], freed_capital, width=1.5, color='lightblue', label='Capital Freed (Direct)')
+
+plt.title("Impact of XRP Adoption on Global Liquidity and Money Supply")
+plt.xlabel("XRP Share of Global Nostro Accounts Replaced (%)")
+plt.ylabel("Estimated Increase in Liquidity / Money Supply (Trillions USD)")
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()

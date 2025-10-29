@@ -1,0 +1,184 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: 'Exploratory Data Analysis'\n",
+        "author: 'Zach'\n",
+        "format: html\n",
+        "---\n",
+        "\n",
+        "\n",
+        "## Load package\n"
+      ],
+      "id": "e840bcfa"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt"
+      ],
+      "id": "bfe853da",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Load dataset from smoker.csv file\n"
+      ],
+      "id": "0cf400c6"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df = pd.read_csv('smoker.csv')"
+      ],
+      "id": "6cc72f65",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Check dimensions of dataset\n"
+      ],
+      "id": "82ba1654"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.shape"
+      ],
+      "id": "dfb58e55",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Check details of dataset (col, row, types, etc.)\n"
+      ],
+      "id": "cb2cc11e"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.info()"
+      ],
+      "id": "a7401a08",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Check first five rows\n"
+      ],
+      "id": "74e5d1e4"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.head()"
+      ],
+      "id": "71559f83",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Check last five rows\n"
+      ],
+      "id": "29cced6d"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.tail()"
+      ],
+      "id": "14a24641",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Calculate sum of treatment column\n"
+      ],
+      "id": "afaa3454"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "print(df['treatment'].sum())"
+      ],
+      "id": "757f32bf",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Create descriptive statistics\n"
+      ],
+      "id": "0865289c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.describe()"
+      ],
+      "id": "4bcc9cb6",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Check significant values in outcome column\n"
+      ],
+      "id": "f61e6693"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df['outcome'].value_counts()"
+      ],
+      "id": "91492bd7",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/homebase/BAAI-2/BAAI-1/venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

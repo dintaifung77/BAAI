@@ -3,5 +3,36 @@ title: 'Final Exam'
 Author: 'Zach'
 date: 2024-12-11
 format: html
----
+
+## Data types
+- Integer
+- Float
+- ...
+
+## Loop
+--
+
+## Conditional statement
+- if
+- elif
+- ...
+
+## Packages
+- Install. How? pip install [PACKAGE NAME]
+- How to include in python source code?
+- ...
+
+## EDA(Exploratory Data Analysis)
+- Pandas package
+- Visualization
+- numpy
+- matplotlib
+- seaborn
+- ...
+
+## AI
+- Continue
+- ollama
+- ...
+
 
