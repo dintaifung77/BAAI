@@ -2,7 +2,7 @@ import pandas as pd
 from scipy.stats import pearsonr
 
 # 1. Load your file (ensure the filename matches exactly)
-file_path = 'MBA Masters Thesis Survey' 
+file_path = 'MBA Masters Thesis Survey- Stock copy.csv' 
 df = pd.read_csv(file_path)
 
 # 2. Define the Mapping Function (Converts text answers to 1-5 numbers)
