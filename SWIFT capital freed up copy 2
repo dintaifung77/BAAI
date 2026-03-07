@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+
+# Data
+xrp_adoption = [5, 10, 14, 20, 30]  # % XRP adoption
+debt_coverage = [2.5, 4.9, 6.9, 9.8, 14.7]  # % of US debt covered
+
+# Plot
+plt.figure(figsize=(8,6))
+plt.bar(xrp_adoption, debt_coverage, color='teal', alpha=0.8)
+plt.xlabel("XRP Share of Global Nostro Accounts (%)", fontsize=12)
+plt.ylabel("Potential % of U.S. National Debt Covered", fontsize=12)
+plt.title("Macro Impact of XRP Adoption on U.S. Debt Coverage", fontsize=14)
+plt.xticks(xrp_adoption)
+plt.ylim(0, 16)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+# Annotate bars
+for i, val in enumerate(debt_coverage):
+    plt.text(xrp_adoption[i], val + 0.5, f"{val:.1f}%", ha='center', fontsize=10)
+
+plt.tight_layout()
+plt.show()

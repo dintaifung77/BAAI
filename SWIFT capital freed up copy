@@ -1,0 +1,31 @@
+import matplotlib.pyplot as plt
+
+# Baseline data
+shares = [5, 10, 14, 20, 30]  # XRP adoption (%)
+global_nostro = 27_000_000_000_000  # USD
+
+# Stage 1: Capital Freed
+freed_capital = [(global_nostro * (s / 100)) / 1e12 for s in shares]  # in Trillions USD
+
+# Money multipliers
+m = 5
+expanded_money = [f * m for f in freed_capital]
+
+# Stage 2: GDP impact
+k = 0.5  # fraction of money supply impacting GDP
+delta_gdp = [em * k for em in expanded_money]
+
+# Plot
+plt.figure(figsize=(10,6))
+
+plt.plot(shares, freed_capital, marker='o', linewidth=2, label='Capital Freed (T USD)')
+plt.plot(shares, expanded_money, marker='s', linewidth=2, label=f'Expanded Money Supply (m={m})')
+plt.plot(shares, delta_gdp, marker='^', linewidth=2, label=f'Potential GDP Impact (k={k})')
+
+plt.title("Macro Impact of XRP Adoption on Global Liquidity and GDP")
+plt.xlabel("XRP Share of Global Nostro Accounts Replaced (%)")
+plt.ylabel("Trillions USD")
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()
