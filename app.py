@@ -3,7 +3,6 @@
 import gradio as gr
 import os, requests, json
 
-API_KEY = "sk-AZWBaOwOJgUN0XO3F4cAPg"
 API_BASE_URL = "https://api.ithu.tw/v1"
 MODEL_NAME = "gpt-oss-120b"
 
