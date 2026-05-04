@@ -3,6 +3,7 @@
 import gradio as gr
 import os, requests, json
 
+API_KEY = "sk-AZWBaOwOJgUN0XO3F4cAPg"
 API_BASE_URL = "https://api.ithu.tw/v1"
 MODEL_NAME = "gpt-oss-120b"
 
@@ -16,7 +17,7 @@ def greet(name):
     data = {
         "model": "gpt-oss-120b",
         "messages": [
-            {"role": "system", "content": "You are a Chinese teacher. Explain the input statement in Traditional Chinese."},
+            {"role": "system", "content": "You are a THU Advisor. Ask questions about scholarship and work permit in Tunghai University, providing answers in English."},
             {"role": "user", "content": name}
         ]
     }
